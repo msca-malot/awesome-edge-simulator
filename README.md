@@ -55,6 +55,17 @@ Application management layer will manage the applications deployed in the edge e
 - edge datacenter consists of heterogeneous processing devices such as smartphone, laptop, Raspberry Pi, and single-server machine
 - edge-IoT management layer consists of several components such as EdgeLet, policies, mobility, battery, synchronism, QoS, network protocols, communication protocols, transport protocols, and security protocols.
 
+# Other Simulators
+
+SimIoT 
+  - has:
+    - multiuser submission
+    - modeling of communication between IoT devices and cloud datacenter
+  - has no 
+    - edge devices
+    - heterogeneity of devices
+    - energy consumption
+
 # Relevant Papers
 
 - Dolui K, Datta SK. Comparison of edge computing implementations: fog computing, cloudlet and mobile edge computing. 2017 IEEE Global Internet of Things Summit (GIoTS); 2017, 1–6.

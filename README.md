@@ -8,6 +8,24 @@
   - Transactions on Emerging Telecommunications Technologies
 - Date
   - 06 August 2018
+  
+## PureEdgeSim
+
+[A simulation toolkit for performance evaluation of cloud, fog, and pure edge computing environments](https://doi.org/10.1109/HPCS48598.2019.9188059)
+
+- Venue
+  - 2019 International Conference on High Performance Computing & Simulation (HPCS)
+- Date
+  - 15 July 2019
+
+## IoTSim-Edge
+
+[A simulation framework for modeling the behavior of Internet of Things and edge computing environments](https://doi.org/10.1002/spe.2787)
+
+- Venue
+  - Software: Practice and Experience
+- Date
+  - 07 January 2020
 
 ### Motivation
 
@@ -36,24 +54,6 @@ Application management layer will manage the applications deployed in the edge e
 - communication among subscribed components (eg, broker, edge datacenter, and IoT resources) using an event management system
 - edge datacenter consists of heterogeneous processing devices such as smartphone, laptop, Raspberry Pi, and single-server machine
 - edge-IoT management layer consists of several components such as EdgeLet, policies, mobility, battery, synchronism, QoS, network protocols, communication protocols, transport protocols, and security protocols.
-  
-## PureEdgeSim
-
-[A simulation toolkit for performance evaluation of cloud, fog, and pure edge computing environments](https://doi.org/10.1109/HPCS48598.2019.9188059)
-
-- Venue
-  - 2019 International Conference on High Performance Computing & Simulation (HPCS)
-- Date
-  - 15 July 2019
-
-## IoTSim-Edge
-
-[A simulation framework for modeling the behavior of Internet of Things and edge computing environments](https://doi.org/10.1002/spe.2787)
-
-- Venue
-  - Software: Practice and Experience
-- Date
-  - 07 January 2020
 
 # Relevant Papers
 

@@ -4,10 +4,64 @@
 
 [An environment for performance evaluation of edge computing systems](https://doi.org/10.1002/ett.3493)
 
+- Repository
+  - https://github.com/CagataySonmez/EdgeCloudSim
 - Venue
   - Transactions on Emerging Telecommunications Technologies
 - Date
   - 06 August 2018
+
+### Motivation
+
+- using a real cloud environment is not a cost-effective option due to the deployment requirements.
+- working on the experimental test beds brings in difficulties regarding the repeatability of the experiments and scalability of the proposed architectures
+
+Chanllenges:
+- virtualized resources: integrating a computationalmodel of the virtualized resources and the fog devices requires more complex application models
+- mobility: mobility of edge/fog devices affects many other modules.
+- network: the interactions among the users, edge nodes, and the cloud may require different access technologies and topologies, such as Wi-Fi, Bluetooth, 4G, and 5G
+- extensibility: to customize and extend the modeling tool according to their requirements
+- the ease of analysis: logs and output format
+
+### Features
+
+A modular architecture to provide support for a variety of crucial functionalities:
+  - **network modeling** specific to WLAN and WAN
+  - **device mobility model**
+  - **realistic and tunable load generator**
+  - **edge orchestrator** module to enable its users to model the orchestration actions
+
+### Architecture
+
+<p align="center">
+<img src="EdgeCloudSim-Architecture.png"> <br/>
+<i>EdgeCloudSim Architecture</i>
+</p>
+
+- The core simulation module 
+  - is mainly responsible for loading and running the edge computing scenarios from the configuration files
+- The edge orchestrator module fulfills the orchestration process.
+  - edge orchestrator makes critical decisions such as creating new replicas, terminating the edge VMs, managing the computational resources of hosts, and offloading the tasks to the cloud or edge servers. It should collect information from the other entities to make the decision process more efficient.
+- The networking module
+  - handles the transmission delay in the WLAN and WAN by considering both upload and download data.
+- The mobility module
+  - each mobile device has x and y coordinates that are updated according to the dynamically managed hash table. In the current version, the mobile devices move according to the nomadic mobility model, but it can be extended to a different model according to the simulation scenario to be planned.
+- The load generator module
+  - is responsible for generating tasks for the given application configuration.
+
+<p align="center">
+<img src="EdgeCloudSim-Modules.png"> <br/>
+<i>EdgeCloudSim Modules</i>
+</p>
+
+
+### Use steps
+
+- modeling the application (scenarios)
+- modeling the mobility of devices
+- modeling the network delay
+- modeling the edge computing architectures
+- 
   
 ## PureEdgeSim
 
@@ -130,6 +184,9 @@ Application management layer will manage the applications deployed in the edge e
 - edge-IoT management layer consists of several components such as EdgeLet, policies, mobility, battery, synchronism, QoS, network protocols, communication protocols, transport protocols, and security protocols.
 
 # Other Simulators
+
+CloudSim/CloudSim plus is the base of the above edge computing simulators.
+As be claimed in EdgeCloudSim, "the main drawbacks of CloudSim from the point of view of edge computing are (i) lack of the dynamic WLAN and WAN communication models, (ii) lack of the mobile nodes and mobility support in general, and (iii) lack of the realistic edge type load generator model."
 
 SimIoT 
   - has

@@ -61,7 +61,6 @@ A modular architecture to provide support for a variety of crucial functionaliti
 - modeling the mobility of devices
 - modeling the network delay
 - modeling the edge computing architectures
-- 
   
 ## PureEdgeSim
 

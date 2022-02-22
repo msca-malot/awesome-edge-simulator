@@ -1,4 +1,4 @@
-# Simulators
+# Edge Computing Simulators
 
 ## EdgeCloudSim
 
@@ -30,7 +30,7 @@ no simulation tool capable of modeling Pure Edge Computing environments, which i
 ### Features
 
 - simulation of resource management strategies
-- performance evaluation of Cloud, Fog, and Pure Edge environments in terms of
+- **performance evaluation of Cloud, Fog, and Pure Edge environments** in terms of
   - delays
   - energy consumption
   - network congestion
@@ -41,7 +41,8 @@ no simulation tool capable of modeling Pure Edge Computing environments, which i
   - fix or mobile
   - battery or power supply
   - latency requirement
-- tasks orchestrator module that manages the available resources, balances the workload, and enables the simulation of multi-tiers scenarios where many computing paradigms can be used in conjunction with one another
+- **tasks orchestrator module** that manages the available resources, balances the workload, and enables the simulation of multi-tiers scenarios where many computing paradigms can be used in conjunction with one another
+- **real time charts**
 
 ### Architecture
 

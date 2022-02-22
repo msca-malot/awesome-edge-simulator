@@ -22,6 +22,8 @@
 
 [A simulation framework for modeling the behavior of Internet of Things and edge computing environments](https://doi.org/10.1002/spe.2787)
 
+- Repository
+  - 
 - Venue
   - Software: Practice and Experience
 - Date
@@ -36,13 +38,17 @@ Edge computing:
 - battery lifecycle of IoT device when sending all the data
 
 Chanllges: diversity of devices, data formats, communication mediums, application scope, functional complexity, and programming models.
-Why not real-world deployment: cost of setup and maintenance, controllability of devices in dynamic environment.
 
-Features: 
-- application composition (DAG modeling);
-- communication protocol (both application and transfer layers);
+**Why not real-world deployment?** cost of setup and maintenance, controllability of devices in dynamic environment.
+
+### Features
+
+- **application composition** (DAG modeling);
+- **edge communication protocol** (both application and transfer layers);
 - mobility of IoT devices (handoff between fixed edge devices and moving IoT devices, moving speed and singla range)
-- battery drainage (monitor the battery consumption)
+- **battery drainage** (monitor the battery consumption)
+
+### Architecture
 
 ![IoT Edge Computing Architecture](IoT-edge-architecture.png)
 
@@ -58,13 +64,34 @@ Application management layer will manage the applications deployed in the edge e
 # Other Simulators
 
 SimIoT 
-  - has:
+  - has
     - multiuser submission
     - modeling of communication between IoT devices and cloud datacenter
   - has no 
     - edge devices
     - heterogeneity of devices
     - energy consumption
+
+COOJA
+  - has
+    - cross-level simulation of deployment at machine code instruction set level, operating system level, and network level
+    - heterogeneous network nodes
+  - has no
+    - support for other platforms (only Contiki supported)
+
+iFogSim
+  - has
+    - modeling of Fog and IoT (fog devices can be regarded as edge devices)
+    - resource management in network congestion, latency, cost, and energy consumption
+  - has no
+    - edge communication protocols
+
+IoTSim
+  - has
+    - map-reduce modeling of big data processing
+  - has no
+    - edge simulation
+
 
 # Relevant Papers
 

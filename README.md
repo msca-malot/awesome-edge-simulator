@@ -13,17 +13,78 @@
 
 [A simulation toolkit for performance evaluation of cloud, fog, and pure edge computing environments](https://doi.org/10.1109/HPCS48598.2019.9188059)
 
+- Repository
+  - https://github.com/CharafeddineMechalikh/PureEdgeSim/
 - Venue
   - 2019 International Conference on High Performance Computing & Simulation (HPCS)
 - Date
   - 15 July 2019
+
+### Motivation
+
+no simulation tool capable of modeling Pure Edge Computing environments, which includes
+- offloading the tasks between edge devices and balancing their load
+- simulating their heterogeneity
+- measuring their energy consumption and their resources utilization
+
+### Features
+
+- simulation of resource management strategies
+- performance evaluation of Cloud, Fog, and Pure Edge environments in terms of
+  - delays
+  - energy consumption
+  - network congestion
+  - resource utilization
+  - task success rate
+- thousands od device (scalability)
+- device heterogenity
+  - fix or mobile
+  - battery or power supply
+  - latency requirement
+- tasks orchestrator module that manages the available resources, balances the workload, and enables the simulation of multi-tiers scenarios where many computing paradigms can be used in conjunction with one another
+
+### Architecture
+
+<p align="center">
+<img src="PureEdgeSim-Architecture.png"> <br/>
+<i>PureEdgeSim Architecture</i>
+</p>
+
+- extension from CloudSim Plus
+  - parallel simulation using all available CPU cores
+  - aspects of cloud computing such as resources and services
+
+- modules
+  - simulation manager:
+    - initiating and managing the simulation environment, scheduling events, and generating the output files
+    - logger
+  - datacenter manager:
+    - Edge Data Center: specific properties of edge devices and their corresponding methods such as the location, the mobility, energy source, battery capacity
+    - Server Manager: different servers and devices, their hosts, and their virtual machines according to the configuration
+  - task generator:
+    - generating tasks: size, CPU utilization, latency requirement
+    - extensibility
+  - location manager:
+    - manage location and mobility
+  - network manager:
+    - bandwidth
+  - task orchestration module
+    - desicion maker that determines whether to offload task and where to offload it
+    - extensibile with own policies
+  - scenario manager
+    - configuration of adjustable parameters
+
+<p align="center">
+<img src="PureEdgeSim-Modules.png"> <br/>
+<i>PureEdgeSim Modules</i>
+</p>
 
 ## IoTSim-Edge
 
 [A simulation framework for modeling the behavior of Internet of Things and edge computing environments](https://doi.org/10.1002/spe.2787)
 
 - Repository
-  - 
+  - https://github.com/DNJha/IoTSim-Edge
 - Venue
   - Software: Practice and Experience
 - Date
@@ -50,11 +111,17 @@ Chanllges: diversity of devices, data formats, communication mediums, applicatio
 
 ### Architecture
 
-![IoT Edge Computing Architecture](IoT-edge-architecture.png)
+<p align="center">
+<img src="IoT-Edge-Architecture.png"> <br/>
+<i>IoT Edge Computing Architecture</i>
+</p>
 
 Application management layer will manage the applications deployed in the edge environment. This layer is responsible for the application composition where an application is decomposed into a DAG of MELs, which abstracts both software and data.
 
-![IoTSim Edge Architecture](IoTSim-Edge-Architecture.png)
+<p align="center">
+<img src="IoTSim-Edge-Architecture.png"> <br/>
+<i>IoTSim-Edge Architecture</i>
+</p>
 
 - on the top of CloudSim
 - communication among subscribed components (eg, broker, edge datacenter, and IoT resources) using an event management system
@@ -85,6 +152,7 @@ iFogSim
     - resource management in network congestion, latency, cost, and energy consumption
   - has no
     - edge communication protocols
+    - mobility of devices
 
 IoTSim
   - has
